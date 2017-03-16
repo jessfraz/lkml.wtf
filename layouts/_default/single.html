@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+<div class="container single">
+	<div class="page-header">
+		<h2>kernel shit weekly <small>{{ .Date.Format "2006/01/02" }}</small></h2>
+	</div>
+	<article>
+		{{ .Content }}
+	</article>
+</div>
+
+{{ partial "footer.html" . }}
