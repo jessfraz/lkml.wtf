@@ -3,7 +3,7 @@
 <div class="container">
     {{ range .Site.Pages.ByDate.Reverse }}
     {{ if ne .Title "Posts" }}
-    {{ if ne .Title "weirdtrickmafia.fm" }}
+    {{ if ne .Title "lkml.wtf" }}
     <article>
         <h2>
             <a href="{{ .Permalink }}" title="{{ .Title }}">
