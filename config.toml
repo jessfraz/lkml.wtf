@@ -2,6 +2,8 @@ baseurl = "https://lkml.wtf/"
 languageCode = "en-us"
 title = "lkml.wtf"
 canonifyUrls = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 
 [params]
 	description = "A weekly roundup of Linux Kernel Mailing List threads but with a lot more sarcasm."
