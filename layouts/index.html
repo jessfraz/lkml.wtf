@@ -1,7 +1,9 @@
 {{ partial "header.html" . }}
 
 <div class="container">
-    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ range .Site.Pages.ByDate.Reverse }}
+    {{ if ne .Title "Posts" }}
+    {{ if ne .Title "weirdtrickmafia.fm" }}
     <article>
         <h2>
             <a href="{{ .Permalink }}" title="{{ .Title }}">
@@ -10,6 +12,8 @@
         </h2>
         {{ .Content }}
     </article>
+    {{ end }}
+    {{ end }}
     {{ end }}
 </div>
 
